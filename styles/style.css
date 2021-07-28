@@ -1,15 +1,22 @@
 body {
   text-align: center;
-}
-h1 {
   font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-items: center;
+  row-gap: 5px;
+}
+.stage {
+  display: flex;
 }
 .square {
   width: 100px;
   height: 100px;
   background-color: rgb(229, 195, 147);
   border: 1px solid gray;
-  display: inline-block;
+  margin-right: 5px;
 }
 .o {
   position: relative;
@@ -38,4 +45,20 @@ h1 {
   content: "⚔️";
   font-size: 50px;
   line-height: 100px;
+}
+input {
+  margin-top: 15px;
+  font-weight: bold;
+  padding: 12px;
+  background-color: rgb(160, 159, 159);
+  border: none;
+  border-radius: 5px;
+}
+input:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.87);
+  color: white;
+}
+input:active {
+  transform: translateY(+5%); 
 }
