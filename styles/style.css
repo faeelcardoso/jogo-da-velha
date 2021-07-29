@@ -17,6 +17,7 @@ body {
   background-color: rgb(229, 195, 147);
   border: 1px solid gray;
   margin-right: 5px;
+  cursor: pointer;
 }
 .o {
   position: relative;
@@ -46,19 +47,96 @@ body {
   font-size: 50px;
   line-height: 100px;
 }
-input {
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.score {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 75px;
+  justify-content: center;
+}
+.player1, .player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.player1 {
+  margin-right: 30px;
+}
+.player2 {
+  margin-left: 30px;
+}
+.count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-15%);
+}
+.count p {
+  border: 1px solid #529ab3;
+  padding: 5px 8px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.count .P1 {
+  margin-right: 30px;
+}
+.count .P2 {
+  margin-left: 30px;
+}
+.count span {
+  color: #484B4D;
+  font-weight: 600;
+  font-size: 16px;
+}
+h1, h2 {
+  text-transform: uppercase;
+  color: #484B4D;
+}
+.containerRestart {
+  width: 100%;
+  height: 30px;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#counterRestart {
+  background-image: url("../assets/rotate-left-circular-arrow.png");
+  background-repeat: no-repeat;
+
+  transform: translateX(-180%);
+
+  border: none;
+  background-color: transparent;
+  height: 29px;
+  width: 21px;
+}
+#counterRestart:hover{
+  cursor: pointer;
+}
+#reiniciar {
   margin-top: 15px;
   font-weight: bold;
   padding: 12px;
   background-color: rgb(160, 159, 159);
   border: none;
   border-radius: 5px;
+  width: 80%;
 }
-input:hover {
+#reiniciar:hover {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.87);
   color: white;
 }
-input:active {
+#reiniciar:active {
   transform: translateY(+5%); 
 }

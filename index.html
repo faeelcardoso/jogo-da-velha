@@ -29,7 +29,30 @@
       <div id="7" class="square"></div>
       <div id="8" class="square"></div>
     </div>
-    <input type="button" value="Reiniciar">
+    <div class="footer">
+      <h2>Score</h2>
+      <div class="containerRestart">
+        <input type="button" id="counterRestart">
+      </div>
+      <div class="score">
+        <div class="player1"> 
+          <span>🛡️</span>
+          <p>Player 1</p>
+        </div>
+        <div class="count">
+          <p class="counter P1"></p>
+          <span>X</span>
+          <p class="counter P2"></p>
+        </div>
+        <div class="player2"> 
+          <span>⚔️</span>
+          <p>Player 2</p>
+        </div>
+      </div>
+      <div>
+        <input type="button" id="reiniciar" value="Reiniciar">
+      </div>
+    </div>
   </div>
 
   <script src="./scripts/game.js" defer></script>

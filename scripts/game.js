@@ -5,6 +5,10 @@ let playerTime = 0; // 0 para o jogador 1, e 1 para o jogador 2
 let symbols = ["o", "x"];
 let gameOver = false;
 let currentWinner = "";
+let isTheFirstTime = true;
+let countP1 = 0;
+let countP2 = 0;
+let currentCount = "";
 let winStates = [
   [0, 1, 2], 
   [3, 4, 5], 
